@@ -34,7 +34,7 @@ const application = new Schema({
 	schoolMisconductExplanation: String,
 	felonyExplanation: String,
 	additionalInfo: String,
-	stepNum: Number,
+	step: Number,
 	signature: String,
 	communtiyService: String,
 });
