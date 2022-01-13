@@ -53,7 +53,7 @@ routes.forEach(({ name, type }) => {
 			);
 		});
 	});
-	app.put(`/api/update/${name}/:id`, (req, res) => {
+	app.put(`/api/put/${name}/:id`, (req, res) => {
 		const id = req.params.id;
 		const obj = { _id: id };
 		type.updateOne(obj, req.body, (err, result) => {
