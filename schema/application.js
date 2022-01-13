@@ -8,7 +8,7 @@ const application = new Schema({
 	middleName: String,
 	lastName: String,
 	email: String,
-	phone: String,
+	phoneNumber: String,
 	streetAddress1: String,
 	streetAddress2: String,
 	city: String,
