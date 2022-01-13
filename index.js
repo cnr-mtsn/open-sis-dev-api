@@ -1,18 +1,17 @@
 // importing the dependencies
-import fetch from "node-fetch";
-import cors from "cors";
-import helmet from "helmet";
-import dotenv from "dotenv";
-import morgan from "morgan";
-import express from "express";
-import bodyParser from "body-parser";
-import mongoose from "mongoose";
+const cors = require("cors");
+const helmet = require("helmet");
+const dotenv = require("dotenv").config();
+const morgan = require("morgan");
+const express = require("express");
+const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
+
 //imort schemas from ./schema
-import Student from "./schema/student.js";
-import Application from "./schema/application.js";
+const Student = require("./schema/student.js");
+const Application = require("./schema/application.js");
 
 // application config
-dotenv.config();
 const app = express();
 app.use(cors());
 app.use(helmet());

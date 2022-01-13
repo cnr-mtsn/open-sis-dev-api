@@ -1,6 +1,5 @@
 {
 	"name": "opensis-dev-api",
-	"type": "module",
 	"version": "1.0.0",
 	"description": "Express API for development only since we don't have access to the official DB yet.",
 	"main": "index.js",
