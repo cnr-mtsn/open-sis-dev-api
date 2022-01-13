@@ -53,6 +53,13 @@ routes.forEach(({ name, type }) => {
 			);
 		});
 	});
+	app.put(`/api/update/${name}/:id`, (req, res) => {
+		const id = req.params.id;
+		const obj = { _id: id };
+		type.updateOne(obj, req.body, (err, result) => {
+			res.send(err ? { message: `Could not update ${name} - see logs` } : { message: `🚀 ${name} updated! 😄` });
+		});
+	});
 	app.delete(`/api/delete/${name}`, (req, res) => {
 		type.deleteMany({}, (err, result) => {
 			res.send(err ? err : result);
