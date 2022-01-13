@@ -48,7 +48,7 @@ routes.forEach(({ name, type }) => {
 		newItem.save((err, result) => {
 			res.send(
 				err
-					? { message: `could not add ${route.name} - see logs` }
+					? { message: `Could not add ${name} - see logs` }
 					: { message: `🚀 ${name} added! 😄`, item: newItem }
 			);
 		});
